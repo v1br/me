@@ -49,7 +49,7 @@ class Background extends Phaser.Scene {
 
 // Setup game
 const config = {
-    type: Phaser.CANVAS,
+    type: Phaser.WEBGL,
     width: window.innerWidth,
     height: window.innerHeight,
     canvas: document.getElementById('background'),
@@ -60,3 +60,20 @@ const config = {
 };
 
 const game = new Phaser.Game(config);
+
+// Manually resize canvas
+function resizeCanvas() {
+    const canvas = document.getElementById('background');
+    if (canvas) {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+}
+  
+window.addEventListener('resize', resizeCanvas);
+window.addEventListener('orientationchange', resizeCanvas);
+resizeCanvas(); // initial call
+
+window.addEventListener('resize', () => {
+game.scale.resize(window.innerWidth, window.innerHeight);
+});
