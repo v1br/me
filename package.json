@@ -1,7 +1,0 @@
-{
-  "name": "v1br-me",
-  "scripts": {
-    "host": "git subtree push --prefix web origin gh-pages"
-  },
-  "type": "module"
-}
