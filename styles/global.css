@@ -10,14 +10,11 @@
   font-style: normal;
 }
   
-html, body {
-  margin: 0;
-  padding: 0;
-  /* overflow: hidden; */
-  width: 100%;
-  height: 100%;
+.h-dsn {
+  height: 100dvh;
 }
-canvas {
-  display: block;
+
+.min-h-dsn {
+  min-height: 100dvh;
 }
   
