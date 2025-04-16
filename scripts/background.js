@@ -55,25 +55,8 @@ const config = {
     canvas: document.getElementById('background'),
     scene: Background,
     render: {
-        pixelArt: true // This globally enables nearest-neighbor filtering
+        pixelArt: true // nearest-neighbor filtering
     }
 };
 
 const game = new Phaser.Game(config);
-
-// Handle window resize
-window.addEventListener('resize', () => {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    game.scale.resize(width, height);
-
-    const scene = game.scene.keys['Background'];
-    if (scene) {
-        scene.layers.forEach(({ sprite }) => {
-            const tex = sprite.texture.getSourceImage();
-            const scale = height / tex.height;
-            sprite.setScale(scale);
-            sprite.setSize(tex.width * scale, height);
-        });
-    }
-});
