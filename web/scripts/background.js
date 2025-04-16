@@ -35,7 +35,7 @@ class Background extends Phaser.Scene {
 
             this.layers.push({
                 sprite: layer,
-                speed: i * 0.1,
+                speed: i * 0.14,
             });
         }
     }
@@ -49,7 +49,7 @@ class Background extends Phaser.Scene {
 
 // Setup game
 const config = {
-    type: Phaser.WEBGL,
+    type: Phaser.CANVAS,
     width: window.innerWidth,
     height: window.innerHeight,
     canvas: document.getElementById('background'),
