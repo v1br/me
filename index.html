@@ -8,25 +8,38 @@
     <link rel="icon" href="https://github.com/v1br.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/speech.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.87.0/phaser.js" integrity="sha512-XTXqXpReNilU4IkjskGuONqKNep6pHFK91kPQbyp2u8mWKHRnwdjWjBO8Wmnq1I+4tJG7P2m1xtA/wHdhpFn5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>v1br | me</title>
+    <title>Shuffling...</title>
 </head>
 <body class="w-screen h-dsn overflow-x-hidden">
     <canvas id="background" class="fixed inset-0 w-screen h-dsn min-h-[40em] mx-auto z-0"></canvas>
-    <main class="absolute inset-0 w-screen h-fit min-h-dsn py-8 text-white play-regular bg-transparent overflow-y-scroll overflow-x-hidden">
-        <div id="inner-layout" class="flex flex-col items-center justify-start w-full lg:w-1/2 h-full p-8 mx-auto gap-16 z-50">
-
+    <main class="absolute inset-0 flex flex-col items-center justify-center w-screen h-fit min-h-dsn py-8 text-white play-regular bg-transparent overflow-y-scroll overflow-x-hidden">
+        <div id="inner-layout" class="flex flex-col items-center justify-start w-full md:w-2/3 lg:w-1/2 h-full p-8 mx-auto gap-16 z-50">
+              
             <!-- Header -->
-            <header class="flex flex-col items-center justify-center w-full h-fit gap-8 text-center">
-              <h1 class="text-4xl font-medium">Hi, I'm Vibhor!</h1>
-              <img src="https://github.com/v1br.png" alt="profile-pic.png" class="w-32 h-32 rounded-full shadow-md border-2 border-black hover:scale-[1.05] hover:shadow-lg transition duration-300 ease-in-out">
+            <header class="flex flex-col sm:flex-row items-center justify-center h-fit gap-4 pt-32 text-center">
+                <div class="relative -left-8 w-fit h-fit">
+                    <img src="https://github.com/v1br.png" alt="profile-pic.png"
+                         class="w-32 h-32 rounded-full shadow-md border-2 border-black transition duration-300 ease-in-out">
+                  
+                    <div class="absolute -top-28 -right-32 bubble-tail-container">
+                      <div class="bubble text-2xl">
+                        Hi, I'm Vibhor!
+                      </div>
+                      <svg class="tail" data-tail-direction="left" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 140 -16 Q 140 160  224 140 140 140  160 -16"></path>
+                      </svg>
+                    </div>
+                  </div>
             </header>
+              
 
             <!-- About Section -->
             <section class="w-full max-w-4xl space-y-4 p-4 rounded-lg shadow-md border-2 border-black bg-white hover:scale-[1.05] hover:shadow-lg transition duration-300 ease-in-out">
               <p class="text-gray-800">
-                <strong class="font-semibold">Hi</strong>! I am a developer exploring the <em class="underline text-[#da5e53]">awesome</em> corners of the internet in search of inspiration and <em class="underline text-[#da5e53]">cool</em> stuff. Scripts, tools & games excite me and so I'm always jumping from idea to idea. I also have a soft spot for retro tech and the good ol' command-line.
+                <strong class="font-semibold">Hi</strong>! I am a software engineer exploring the <em class="underline text-[#da5e53]">awesome</em> corners of the Internet in search of inspiration and <em class="underline text-[#da5e53]">cool</em> stuff. I love discovering and making fun websites, tools and games. I also have a soft spot for retro-tech and the good ol' command-line. ✌🏼
               </p>
             </section>
 
@@ -34,46 +47,74 @@
             <section class="w-full max-w-4xl space-y-4">
                 <h2 class="text-2xl font-medium border-b-2 pb-2 border-white">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                    <!-- On My Way Up -->
-                    <div class="p-4 rounded-xl shadow-md border-2 border-black bg-white space-y-2 hover:scale-[1.05] hover:shadow-lg transition duration-300 ease-in-out">
-                        <img src="assets/images/foreground/sprig.gif" alt="asteroids-cover.gif" class="w-full h-32 rounded-t-lg">
-                        <h3 class="text-gray-700 text-lg font-medium">On My Way Up</h3>
-                        <p class="text-sm text-gray-600">A vertical platformer game where you play as a frog and dodge crazy obstacles to reach the top.</p>
-                        <a href="https://github.com/v1br/on-my-way-up" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center gap-2 text-blue-600 hover:underline">View Repository<img src="assets/icons/external-link.svg" alt="link" class="w-4 h-4 text-blue-600"></a>
+            
+                <!-- On My Way Up -->
+                <div class="flex flex-col rounded-xl shadow-md border-2 border-black bg-white hover:scale-[1.03] hover:shadow-lg transition duration-300 ease-in-out overflow-hidden">
+                    <div class="w-full aspect-video overflow-hidden">
+                    <img src="assets/images/foreground/sprig.gif" alt="game preview" class="object-cover w-full h-full" />
                     </div>
-
-                    <!-- Telco Churn Predictor -->
-                    <div class="p-4 rounded-xl shadow-md border-2 border-black bg-white space-y-2 hover:scale-[1.05] hover:shadow-lg transition duration-300 ease-in-out">
-                        <img src="assets/images/foreground/stan.gif" alt="asteroids-cover.gif" class="w-full h-32 rounded-t-lg">
-                        <h3 class="text-gray-700 text-lg font-medium">Telco Churn Predictor</h3>
-                        <p class="text-sm text-gray-600">A minimalistic telco customer churn predictor powered by an ML model and beautified with React & Chart.</p>
-                        <a href="https://telco-churn.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center gap-2 text-blue-600 hover:underline">View Website<img src="assets/icons/external-link.svg" alt="link" class="w-4 h-4 text-blue-600"></a>
-                    </div>
-
-                    <!-- Cafe Omega -->
-                    <div class="p-4 rounded-xl shadow-md border-2 border-black bg-white space-y-2 hover:scale-[1.05] hover:shadow-lg transition duration-300 ease-in-out">
-                        <img src="assets/images/foreground/toast.gif" alt="asteroids-cover.gif" class="w-full h-32 rounded-t-lg">
-                        <h3 class="text-gray-700 text-lg font-medium">Cafe Omega</h3>
-                        <p class="text-sm text-gray-600">A UI/UX project to learn responsive eCommerce web-design, built with Remix & Tailwind.</p>
-                        <a href="https://cafe-omega.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center gap-2 text-blue-600 hover:underline">View Website<img src="assets/icons/external-link.svg" alt="link" class="w-4 h-4 text-blue-600"></a>
-                    </div>
-
-                    <!-- Asteroids -->
-                    <div class="p-4 rounded-xl shadow-md border-2 border-black bg-white space-y-2 hover:scale-[1.05] hover:shadow-lg transition duration-300 ease-in-out">
-                        <img src="assets/images/foreground/space.gif" alt="asteroids-cover.gif" class="w-full h-32 rounded-t-lg">
-                        <h3 class="text-gray-700 text-lg font-medium">Asteroids</h3>
-                        <p class="text-sm text-gray-600">My first vanilla JavaScript game, inspired from the Atari classic with the same name.</p>
-                        <a href="https://playasteroids.netlify.app/" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center gap-2 text-blue-600 hover:underline">Play Asteroids <img src="assets/icons/external-link.svg" alt="link" class="w-4 h-4 text-blue-600"></a>
+                    <div class="flex flex-col p-4 gap-2">
+                    <h3 class="text-gray-700 text-lg font-medium">On My Way Up</h3>
+                    <p class="text-sm text-gray-600">A vertical platformer game where you play as a frog and dodge crazy obstacles to reach the top.</p>
+                    <a href="https://github.com/v1br/on-my-way-up" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center gap-2 text-blue-600 hover:underline">
+                        View Repository
+                        <img src="assets/icons/external-link.svg" alt="link" class="w-4 h-4" />
+                    </a>
                     </div>
                 </div>
+            
+                <!-- Telco Churn Predictor -->
+                <div class="flex flex-col rounded-xl shadow-md border-2 border-black bg-white hover:scale-[1.03] hover:shadow-lg transition duration-300 ease-in-out overflow-hidden">
+                    <div class="w-full aspect-video overflow-hidden">
+                    <img src="assets/images/foreground/stan.gif" alt="preview" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="flex flex-col p-4 gap-2">
+                    <h3 class="text-gray-700 text-lg font-medium">Telco Churn Predictor</h3>
+                    <p class="text-sm text-gray-600">A minimalistic telco customer churn predictor powered by an ML model and beautified with React & Chart.</p>
+                    <a href="https://telco-churn.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center gap-2 text-blue-600 hover:underline">
+                        View Website
+                        <img src="assets/icons/external-link.svg" alt="link" class="w-4 h-4" />
+                    </a>
+                    </div>
+                </div>
+            
+                <!-- Cafe Omega -->
+                <div class="flex flex-col rounded-xl shadow-md border-2 border-black bg-white hover:scale-[1.03] hover:shadow-lg transition duration-300 ease-in-out overflow-hidden">
+                    <div class="w-full aspect-video overflow-hidden">
+                    <img src="assets/images/foreground/toast.gif" alt="preview" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="flex flex-col p-4 gap-2">
+                    <h3 class="text-gray-700 text-lg font-medium">Cafe Omega</h3>
+                    <p class="text-sm text-gray-600">A UI/UX project to learn responsive eCommerce web-design, built with Remix & Tailwind.</p>
+                    <a href="https://cafe-omega.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center gap-2 text-blue-600 hover:underline">
+                        View Website
+                        <img src="assets/icons/external-link.svg" alt="link" class="w-4 h-4" />
+                    </a>
+                    </div>
+                </div>
+            
+                <!-- Asteroids -->
+                <div class="flex flex-col rounded-xl shadow-md border-2 border-black bg-white hover:scale-[1.03] hover:shadow-lg transition duration-300 ease-in-out overflow-hidden">
+                    <div class="w-full aspect-video overflow-hidden">
+                    <img src="assets/images/foreground/space.gif" alt="preview" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="flex flex-col p-4 gap-2">
+                    <h3 class="text-gray-700 text-lg font-medium">Asteroids</h3>
+                    <p class="text-sm text-gray-600">My first vanilla JavaScript game, inspired from the Atari classic with the same name.</p>
+                    <a href="https://playasteroids.netlify.app/" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center gap-2 text-blue-600 hover:underline">
+                        Play Asteroids
+                        <img src="assets/icons/external-link.svg" alt="link" class="w-4 h-4" />
+                    </a>
+                    </div>
+                </div>
+              </div>
             </section>
-
+  
             <!-- Contact Section -->
             <footer class="w-full max-w-4xl space-y-4">
                 <h2 class="text-2xl font-medium border-b-2 pb-2 border-white">Connect</h2>
 
-                <ul class="grid grid-cols-4 md:grid-cols-8 gap-6">
+                <ul class="flex flex-row gap-6">
                     <li>
                         <a href="https://github.com/v1br" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center w-fit h-fit gap-2 p-2 border-2 border-black bg-white rounded-full shadow-md hover:scale-[1.2] hover:shadow-lg transition duration-300 ease-in-out">
                             <img src="assets/icons/social-github.svg" alt="link" class="w-8 h-8 text-blue-600">
@@ -92,6 +133,7 @@
                 </ul>
             </footer>
         </div>
+        <script src="scripts/splash.js"></script>
         <script src="scripts/background.js"></script>
     </main>
 </body>

@@ -1,0 +1,66 @@
+/* speech-bubbles.css */
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+:root {
+  font-size: 14px;
+
+  --bubble__radius--1: 48% 42% 50% 47%/48% 45% 48% 50%;
+  --bubble__radius--2: 54% 70% 60% 52%/62% 60% 60% 49%;
+  --bubble__radius--3: 60% 39% 54% 50%/42% 49% 45% 56%;
+
+  --bubble__padding--m: 1.75rem 1.875rem 2rem 1.875rem;
+
+  /* FORCE white background and black text/outline */
+  --fill: #ffffff;
+  --outlines: #000000;
+  --accent: #000000;
+}
+
+html {
+  background-color: transparent;
+  font-family: 'Architects Daughter', Comic Sans MS, Comic Sans, sans-serif;
+  color: var(--outlines);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+}
+
+.bubble-tail-container {
+  width: fit-content;
+  height: max-content;
+  max-width: 13.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bubble {
+  text-align: center;
+  background-color: var(--fill);
+  color: var(--outlines);
+  border-radius: var(--bubble__radius--3);
+  padding: var(--bubble__padding--m);
+  hyphens: manual;
+  filter: drop-shadow(0.125rem 0.125rem 0rem var(--outlines))
+          drop-shadow(0.0625rem -0.0625rem 0rem var(--outlines))
+          drop-shadow(-0.0625rem 0.0625rem 0rem var(--outlines));
+}
+
+.tail path {
+  fill: var(--fill);
+  stroke: var(--outlines);
+  stroke-width: 0.25rem;
+}
+
+[data-tail-direction="left"] {
+  transform: scaleX(-1);
+}
+
+.bubble-tail-container svg {
+  filter: drop-shadow(0.046875rem 0rem 0rem var(--outlines));
+  max-width: 12rem;
+  margin: 0 auto;
+}
