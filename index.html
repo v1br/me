@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="https://github.com/v1br.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/speech.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -15,7 +16,7 @@
 </head>
 <body class="w-screen h-dsn overflow-x-hidden">
     <canvas id="background" class="fixed inset-0 w-screen h-dsn min-h-[40em] mx-auto z-0"></canvas>
-    <main class="absolute inset-0 flex flex-col items-center justify-center w-screen h-fit min-h-dsn py-8 text-white play-regular bg-transparent overflow-y-scroll overflow-x-hidden">
+    <main class="absolute inset-0 flex flex-col items-center justify-center w-screen h-fit min-h-dsn py-8 text-white comic-relief-regular bg-transparent overflow-y-scroll overflow-x-hidden">
         <div id="inner-layout" class="flex flex-col items-center justify-start w-full md:w-2/3 lg:w-1/2 h-full p-8 mx-auto gap-16 z-50">
               
             <!-- Header -->
@@ -24,8 +25,8 @@
                     <img src="https://github.com/v1br.png" alt="profile-pic.png"
                          class="w-32 h-32 rounded-full shadow-md border-2 border-black transition duration-300 ease-in-out">
                   
-                    <div class="absolute -top-28 -right-32 bubble-tail-container">
-                      <div class="bubble text-2xl">
+                    <div class="absolute -top-36 -right-32 bubble-tail-container hover:scale-[1.05] hover:shadow-lg transition duration-300 ease-in-out">
+                      <div class="bubble text-2xl comic-relief-bold">
                         Hi, I'm Vibhor!
                       </div>
                       <svg class="tail" data-tail-direction="left" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +40,7 @@
             <!-- About Section -->
             <section class="w-full max-w-4xl space-y-4 p-4 rounded-lg shadow-md border-2 border-black bg-white hover:scale-[1.05] hover:shadow-lg transition duration-300 ease-in-out">
               <p class="text-gray-800">
-                <strong class="font-semibold">Hi</strong>! I am a software engineer exploring the <em class="underline text-[#da5e53]">awesome</em> corners of the Internet in search of inspiration and <em class="underline text-[#da5e53]">cool</em> stuff. I love discovering and making fun websites, tools and games. I also have a soft spot for retro-tech and the good ol' command-line. ✌🏼
+                I am a software engineer exploring the <em class="underline text-[#da5e53]">awesome</em> corners of the Internet in search of inspiration and <em class="underline text-[#da5e53]">cool</em> stuff. I love discovering and making <em class="underline text-[#da5e53]">fun</em> websites, tools and games. I also have a soft spot for retro-tech and the good ol' command-line. ✌🏼
               </p>
             </section>
 
@@ -100,7 +101,7 @@
                     </div>
                     <div class="flex flex-col p-4 gap-2">
                     <h3 class="text-gray-700 text-lg font-medium">Asteroids</h3>
-                    <p class="text-sm text-gray-600">My first vanilla JavaScript game, inspired from the Atari classic with the same name.</p>
+                    <p class="text-sm text-gray-600">A JavaScript game inspired by the original Atari game where you control a spaceship and destroy asteroids.</p>
                     <a href="https://playasteroids.netlify.app/" target="_blank" rel="noopener noreferrer" class="flex flex-row items-center gap-2 text-blue-600 hover:underline">
                         Play Asteroids
                         <img src="assets/icons/external-link.svg" alt="link" class="w-4 h-4" />
