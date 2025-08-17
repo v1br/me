@@ -1,10 +1,134 @@
 (function setRandomEasterEggs() {
     
-    const magicNumber = 20;
-    const randomValue = Math.floor(Math.random() * magicNumber);
+    const magicNumber = 32;
     let randomSplash = "";
+    const randomValue = Math.floor(Math.random() * magicNumber);
 
-    if (randomValue === 20) {
+    // This line is for testing only
+    // const randomValue = magicNumber;
+    // END
+
+    if (randomValue === 32) {
+
+        randomSplash = "is it friday?";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://isitfridayyet.net" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/batmanthinks.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 31) {
+
+        randomSplash = "towards a single folder filesystem";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://www.skytopia.com/project/articles/filesystem.html#intro" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/girloncomputer.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 30) {
+
+        randomSplash = "who's your fav pokemon?";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://cajunavenger.github.io" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/pokepals.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 29) {
+
+        randomSplash = "you have 0 candies";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://candybox2.github.io" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/candymouse.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 28) {
+
+        randomSplash = "take a trip down memory lane";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://www.myretrotvs.com" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/cooldog.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 27) {
+
+        randomSplash = "booting up...";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://www.windows93.net" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/win93.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 26) {
+
+        randomSplash = "find that anime";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://trace.moe" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/nursejoy.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 25) {
+
+        randomSplash = "gotta go fast";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://hedgehogcreek.com" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/hedgehog.webp" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 24) {
+
+        randomSplash = "don't do drugs";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://www.csh.bz/line/05xp.html" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/psycha.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 23) {
+
+        randomSplash = "right click here";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://xkcd.com/1975" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/rightclickhere.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 22) {
+
+        randomSplash = "your browser has cholera";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://classicreload.com/oregon-trail.html" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/cleaningmygun.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 21) {
+
+        randomSplash = "long pants long pants";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://homestarrunner.com" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/longpants.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `;
+    }
+    else if (randomValue === 20) {
 
         randomSplash = "ham.";
 
