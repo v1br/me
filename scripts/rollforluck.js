@@ -1,6 +1,6 @@
 (function setRandomEasterEggs() {
     
-    const magicNumber = 32;
+    const magicNumber = 40;
     let randomSplash = "";
     const randomValue = Math.floor(Math.random() * magicNumber);
 
@@ -8,7 +8,86 @@
     // const randomValue = magicNumber;
     // END
 
-    if (randomValue === 32) {
+    if (randomValue === 40) {
+
+        randomSplash = "forty";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://en.wikipedia.org/wiki/40_(number)" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/forty.gif" alt="Easter Egg" class="w-40 h-auto" />
+        </a>
+        `
+    }
+    else if (randomValue === 39) {
+
+        randomSplash = "is hotdog a sandwich?";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://cuberule.com" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/hotdogboogie.gif" alt="Easter Egg" class="w-24 h-auto" />
+        </a>
+        `
+    }
+    else if (randomValue === 38) {
+
+        randomSplash = "crossbreed an alien with a melon";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://alienmelon.com" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/alienboy.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `
+    }
+    else if (randomValue === 37) {
+
+        randomSplash = "free bardic inspiration";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://fastcharacter.com" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/bardic.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `
+    }
+    else if (randomValue === 36) {
+
+        randomSplash = "welcome class, to html 101";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://lissaexplains.com" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/html.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `
+    }
+    else if (randomValue === 35) {
+
+        randomSplash = "kung fu fighting!"
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://www.kfchess.com" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/kungfu.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `
+    }
+    else if (randomValue === 34) {
+
+        randomSplash = "aim for nostalgia";
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://chivanet.org" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/aolaim.gif" alt="Easter Egg" class="w-24 h-auto" />
+        </a>
+        `
+    }
+    else if (randomValue === 33) {
+        randomSplash = "gogh get your own colors today!"
+
+        document.getElementById("egg").innerHTML = `
+        <a class="flex flex-row z-50 cursor-pointer" href="https://gogh-co.github.io/Gogh" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/easter-eggs/vangogh.gif" alt="Easter Egg" class="w-32 h-auto" />
+        </a>
+        `
+    }
+    else if (randomValue === 32) {
 
         randomSplash = "is it friday?";
 
@@ -84,7 +163,7 @@
 
         document.getElementById("egg").innerHTML = `
         <a class="flex flex-row z-50 cursor-pointer" href="https://hedgehogcreek.com" target="_blank" rel="noopener noreferrer">
-        <img src="assets/images/easter-eggs/hedgehog.webp" alt="Easter Egg" class="w-32 h-auto" />
+        <img src="assets/images/easter-eggs/hedgehog.gif" alt="Easter Egg" class="w-32 h-auto" />
         </a>
         `;
     }
@@ -164,7 +243,7 @@
 
         document.getElementById("egg").innerHTML = `
         <a class="flex flex-row z-50 cursor-pointer" href="https://emcarroll.com/comics/faceallred/01.html" target="_blank" rel="noopener noreferrer">
-        <img src="assets/images/easter-eggs/title.jpg" alt="Easter Egg" class="w-32 h-auto" />
+        <img src="assets/images/easter-eggs/facered.gif" alt="Easter Egg" class="w-32 h-auto" />
         </a>
         `;
     }
@@ -281,7 +360,7 @@
 
         document.getElementById("egg").innerHTML = `
         <a class="flex flex-row z-50 cursor-pointer" href="https://falsepositivecomic.com/comic/newtons-apple-page-1-2" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/easter-eggs/newtons-apple.jpg" alt="Easter Egg" class="w-32 h-auto" />
+            <img src="assets/images/easter-eggs/newton.gif" alt="Easter Egg" class="w-32 h-auto" />
         </a>
       `;
     }
@@ -344,7 +423,7 @@
 
         document.getElementById("egg").innerHTML = `
         <a class="flex flex-row z-50 cursor-pointer" href="https://store.steampowered.com/app/105600/Terraria" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/easter-eggs/forest-pylon.webp" alt="Easter Egg" class="w-8 h-auto" />
+            <img src="assets/images/easter-eggs/pylon.gif" alt="Easter Egg" class="w-16 h-auto" />
         </a>
       `;
     }
